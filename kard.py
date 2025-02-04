@@ -1,7 +1,6 @@
 import telebot
 from telebot import types
 import random
-import schedule
 import time
 from datetime import datetime, timedelta
 
@@ -23,7 +22,7 @@ def start(message):
     bot.send_message(message.chat.id, f"привет, {message.from_user.username}, ваши очки: {ids[str(id)]}", parse_mode = "html")
 
    
-
+print(1)
 
 
 @bot.message_handler(commands = ['points'])
